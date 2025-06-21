@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Very light blue-gray background */
+            background-image: linear-gradient(to bottom right, #f8fafc, #edf2f7); /* Subtle gradient */
+            min-height: 100vh; /* Ensure body takes full viewport height */
+        }
+        /* Custom scrollbar for aesthetic purposes */
+        body::-webkit-scrollbar {
+            width: 8px;
+        }
+        body::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+        body::-webkit-scrollbar-thumb {
+            background: #a7a7a7; /* Slightly darker grey */
+            border-radius: 10px;
+        }
+        body::-webkit-scrollbar-thumb:hover {
+            background: #7a7a7a;
+        }
+        /* Style for active navigation link */
+        .nav-link.active {
+            color: #0d9488; /* Teal-600 */
+            font-weight: 600; /* Semi-bold */
+            border-bottom: 2px solid #0d9488; /* Underline for active */
+            padding-bottom: 0.25rem; /* Space for underline */
+        }
+    </style>
+</head>
+<body class="antialiased text-gray-800">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md py-4 sticky top-0 z-10">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+            <div class="text-2xl font-bold text-gray-800 mb-2 md:mb-0">English Portfolio</div>
+            <div class="flex flex-wrap justify-center space-x-4 md:space-x-6 text-lg">
+                <a href="#" id="nav-home" class="nav-link text-gray-700 hover:text-teal-600 font-medium transition duration-300 active">Home</a>
+                <a href="#" id="nav-instructions" class="nav-link text-gray-700 hover:text-teal-600 font-medium transition duration-300">Instructions</a>
+                <a href="#" id="nav-proposal" class="nav-link text-gray-700 hover:text-teal-600 font-medium transition duration-300">Proposal</a>
+                <a href="#" id="nav-coverletter" class="nav-link text-gray-700 hover:text-teal-600 font-medium transition duration-300">Cover Letter</a>
+                <a href="#" id="nav-resume" class="nav-link text-gray-700 hover:text-teal-600 font-medium transition duration-300">Resume</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main id="main-content-area" class="container mx-auto px-4 py-8 md:py-12">
+        <!-- Home Section (Default View) -->
+        <section id="home-section" class="">
+            <!-- Profile Section -->
+            <div class="bg-gradient-to-r from-teal-500 to-teal-700 p-8 md:p-12 rounded-3xl shadow-xl mb-12 flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-8 transform transition-all duration-300 hover:scale-[1.01] hover:shadow-2xl">
+                <div class="flex-shrink-0 w-32 h-32 md:w-40 md:h-40 bg-white rounded-full flex items-center justify-center shadow-lg border-4 border-teal-300 overflow-hidden">
+                    <!-- User icon - Replaced with image placeholder and rounded-full for circular shape -->
+                    <img src="2ndpfpc.jpg" alt="Lorenzo Wyman Profile" class="w-full h-full object-cover rounded-full">
+                </div>
+                <div class="text-center md:text-left text-white flex-grow">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-2">Lorenzo Wyman</h1>
+                    <p class="text-xl md:text-2xl font-medium mb-3 opacity-90">Computer Science Major, Aspiring Software Developer</p>
+                    <p class="text-lg md:text-xl opacity-80">Welcome to my English portfolio! I'm passionate about creating meaningful work that makes a difference.</p>
+                </div>
+            </div>
+
+            <!-- About Me Section -->
+            <div class="bg-white p-8 rounded-3xl shadow-lg mb-12 transform transition-all duration-300 hover:scale-[1.005] hover:shadow-xl">
+                <h2 class="text-3xl md:text-4xl font-semibold text-gray-800 mb-6 border-b-2 border-teal-200 pb-3">About Me</h2>
+                <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                    Welcome to my English portfolio website! This site showcases my academic assignments and
+                    professional documents from my ENC 3241 course. Feel free to navigate through the different sections using the menu
+                    above to learn more about my work and qualifications.
+                </p>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    I'm a third year Computer Science student at the University of Central Florida, with prior experience in photography, digital media, music creation and graphic design.
+                    I speak both English and Spanish, aswell growing my proficiency in programming languages such as C, Java, JavaScript, and HTML. I've worked as a Journalist Photographer for a school for 3 years, where I began to hone my creative design and leadership skills to produce high-quality and highly-anticipated yearbooks. And most recently hae become an 
+                    Academic Coach for both Santa Fe College and the University of Central Florida where I enjoy helping students navigate their journey on campus and ensure a smooth transition from their previous institution.
+                    I hope you find reading my writing samples enjoyable! 
+                </p>
+            </div>
+
+            <!-- Skills and Education Section -->
+            
+
+                <!-- Education Card -->
+                <div class="bg-white p-8 rounded-3xl shadow-lg transform transition-all duration-300 hover:scale-[1.005] hover:shadow-xl">
+                    <h2 class="text-3xl md:text-4xl font-semibold text-gray-800 mb-6 border-b-2 border-teal-200 pb-3">Education</h2>
+                    <div class="mb-6">
+                        <h3 class="text-xl font-semibold text-gray-800">University of Central Florida</h3>
+                        <p class="text-lg text-gray-700">Bachelor of Science in Computer Science</p>
+                        <p class="text-base text-gray-600">Orlando, FL | 2024 - Present</p>
+                       
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800">Santa Fe College</h3>
+                        <p class="text-lg text-gray-700">Associates of Arts in Computer Science</p>
+                        <p class="text-base text-gray-600">Gainesville, FL | 2022 - 2024</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dynamic Content Section -->
+        <section id="dynamic-content-section" class="hidden bg-white p-8 rounded-3xl shadow-lg"></section>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const navLinks = document.querySelectorAll('.nav-link');
+            const homeSection = document.getElementById('home-section');
+            const dynamicContentSection = document.getElementById('dynamic-content-section');
+
+            // Define content for each tab as HTML strings
+            const content = {
+                'home': `
+                    <!-- Profile Section (duplicated for home view) -->
+                    <div class="bg-gradient-to-r from-teal-500 to-teal-700 p-8 md:p-12 rounded-3xl shadow-xl mb-12 flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-8">
+                        <div class="flex-shrink-0 w-32 h-32 md:w-40 md:h-40 bg-white rounded-full flex items-center justify-center shadow-lg border-4 border-teal-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20 md:h-24 md:w-24 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a4 4 0 00-4 4v1a2 2 0 002 2h8a2 2 0 002-2v-1a4 4 0 00-4-4h-4z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                        <div class="text-center md:text-left text-white flex-grow">
+                            <h1 class="text-4xl md:text-5xl font-bold mb-2">Lorenzo Wyman</h1>
+                            <p class="text-xl md:text-2xl font-medium mb-3 opacity-90">Computer Science Major, Aspiring Software Developer</p>
+                            <p class="text-lg md:text-xl opacity-80">Welcome to my portfolio. I'm passionate about creating meaningful work that makes a difference.</p>
+                        </div>
+                    </div>
+
+                    <!-- About Me Section -->
+                    <div class="bg-white p-8 rounded-3xl shadow-lg mb-12">
+                        <h2 class="text-3xl md:text-4xl font-semibold text-gray-800 mb-6 border-b-2 border-teal-200 pb-3">About Me</h2>
+                        <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                            Welcome to my portfolio website! This site showcases my academic assignments and
+                            professional documents. Feel free to navigate through the different sections using the menu
+                            above to learn more about my work and qualifications.
+                        </p>
+                        <p class="text-lg text-gray-700 leading-relaxed">
+                            I have experience in mobile app and web development, and I'm currently studying Computer Science. I'm always looking for new opportunities to grow and apply my knowledge in
+                            real-world scenarios.
+                        </p>
+                    </div>
+
+                    <!-- Skills and Education Section -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                        <!-- Skills Card -->
+                        <div class="bg-white p-8 rounded-3xl shadow-lg">
+                            <h2 class="text-3xl md:text-4xl font-semibold text-gray-800 mb-6 border-b-2 border-teal-200 pb-3">Skills</h2>
+                            <ul class="space-y-4 text-lg text-gray-700">
+                                <li class="flex items-start">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-teal-600 mr-3 mt-1 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                    </svg>
+                                    <div>
+                                        <span class="font-bold">Languages:</span> English (Fluent), American Sign Language (Intermediate)
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-teal-600 mr-3 mt-1 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                    </svg>
+                                    <div>
+                                        <span class="font-bold">Programming & Frameworks:</span> C (Intermediate), CSS (Intermediate), HTML (Beginner), Java (Beginner), JavaScript (Intermediate), React Native (Intermediate)
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-teal-600 mr-3 mt-1 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                    </svg>
+                                    <div>
+                                        <span class="font-bold">Tools & Platforms:</span> Canva, Figma, GitHub, Microsoft Office, OnShape (CAD)
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Education Card -->
+                        <div class="bg-white p-8 rounded-3xl shadow-lg">
+                            <h2 class="text-3xl md:text-4xl font-semibold text-gray-800 mb-6 border-b-2 border-teal-200 pb-3">Education</h2>
+                            <div class="mb-6">
+                                <h3 class="text-xl font-semibold text-gray-800">University of Central Florida</h3>
+                                <p class="text-lg text-gray-700">Bachelor of Science in Computer Science</p>
+                                <p class="text-base text-gray-600">Orlando, FL | 2024 - Present</p>
+                                <p class="text-base text-gray-600 mt-2 leading-relaxed">
+                                    <span class="font-semibold">Related Coursework:</span> Computer Logic & Organization, Computer Science I, Security In Computing, Object-Oriented Programming
+                                </p>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-800">Santa Fe College</h3>
+                                <p class="text-lg text-gray-700">Associates of Arts in Computer Science</p>
+                                <p class="text-base text-gray-600">Gainesville, FL | 2022 - 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                `,
+                'instructions': `
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6 text-center">Writing Sample: How to Properly Wash and Maintain Curly or Kinky Hair</h2>
+                    <p class="text-lg text-gray-600 mb-6 text-center">By Lorenzo Wyman &bull; May 31, 2025</p>
+
+                    <p class="text-lg text-gray-600 mb-6 text-center">This writing assignment explains in explicit detail the processes and steps to properly and efficiently wash curly and kinky hair while allowing
+                        myself to grow my technical writing skills and writing instruction for readers to follow and understand vividly. The goal is that by the end of reading these instructions, if the reader is able to
+                        fully learn, understand, and execute these steps to the best of their capabilities then that demonstrates my mastery of the instructions assignment.</p>
+
+                    <h3 class="text-2xl font-semibold text-gray-700 mb-4">Table of Contents</h3>
+                    <ul class="list-disc list-inside text-lg text-gray-700 space-y-1 mb-8">
+                        <li> 1. How to Properly Wash and Maintain Curly or Kinky Hair </li>
+                        <li> 2. Table of Contents </li>
+                        <li> 3. Introduction and Overview</li>
+                        <li> 4. Things to be Aware Of</li>
+                        <li> 5. Washing Your Curly or Kinky Hair </li>
+                        <li> 6. Steps</li>
+                        <li> 7. Applying Oils & Cream </li>
+                        <li> 8. Conclusion </li>
+                    </ul>
+
+                    <h3 class="text-2xl font-semibold text-gray-700 mb-4">Introduction and Overview</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                        There comes a time when everyone wants to experience change, whether it's emotionally or physically. But the bottom line of your reason for change is to bring forth new opportunities to express yourself! The same thing applies to hair, especially curly and kinky textures (type 3a to 4c).
+                    </p>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-8">
+                        Our hair is one of the features on our bodies that people pay close attention to. This is why it’s important to treat your hair good by washing and maintaining it. This could be by yourself or at a salon, but it’s important to watch out for some cosmetologists and stylists at some salons. So, we’re going to learn how to wash our hair ourselves.
+                    </p>
+
+                    <h3 class="text-2xl font-semibold text-gray-700 mb-4">Things to be Aware Of</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-3">As I mentioned earlier, there are a plethora of hairstylists that are so eager to “perfect” their crafts and in the process:</p>
+                    <ul class="list-disc list-inside text-lg text-gray-700 space-y-2 mb-8">
+                        <li>Simply play in a lot of customers’ hair, further damaging it in the process.</li>
+                        <li>Stylists who wear faces that are green with envy because your or other customers' hair may be longer, healthier, nicer in density, or have a nicer color than their own.</li>
+                        <li>Becoming “scissor happy” and trimming more than you may have asked, or adding additional chemicals to your hair so that by the time your next wash comes around, your hair is in a way worse condition than it once was.</li>
+                    </ul>
+
+                    <h3 class="text-2xl font-semibold text-gray-700 mb-4">Washing Your Curly or Kinky Hair</h3>
+                    <h4 class="text-xl font-medium text-gray-700 mb-3">What You’ll Need:</h4>
+
+                    <ul class="list-disc list-inside text-lg text-gray-700 space-y-3 mb-8">
+                        <li>Detangling brush (UnBrush brush highly recommended!)</li>
+                        <div class="my-4 flex justify-center">
+                            <img src="PXL_20250531_230608022.RAW-01.COVER.jpg" alt="Detangling Brush" class="rounded-lg shadow-md w-full max-w-sm">
+                        </div>
+                        <li>Shampoo(s) of choice</li>
+                        <li>Conditioner(s) of choice</li>
+                        <li>Deep Conditioner(s) of choice</li>
+                        <li>A place to wash your hair (sink, shower)</li>
+                        <li>Blow dryer or towel</li>
+                    </ul>
+
+                    <h4 class="text-xl font-medium text-gray-700 mb-3">Steps:</h4>
+                    <ol class="list-decimal list-inside text-lg text-gray-700 space-y-6 mb-8">
+                        <li><span class="font-bold">Detangle</span> - similar to combing; from ENDS to ROOTS of scalp to prevent tangles in the shower, save time, and have less breakage (if you prefer to do so in the shower, skip to step 4).</li>
+                        <div class="my-4 flex justify-center">
+                            <img src="PXL_20250531_231646083.RAW-01.COVER.jpg" alt="Detangling Hair" class="rounded-lg shadow-md w-full max-w-sm">
+                        </div>
+                        <li><span class="font-bold">Sectioning (Optional)</span> - Divide typically into sections of 2 to 6, depending on preference, to focus on individual sections of hair at a time.</li>
+                        <div class="my-4 flex flex-col md:flex-row justify-center items-center gap-4">
+                            <img src="PXL_20250531_231148287.RAW-01.COVER.jpg" alt="Sectioning Hair Image 1" class="rounded-lg shadow-md w-full md:w-1/4 max-w-xs">
+                            <img src="PXL_20250531_231405533.RAW-01.COVER.jpg" alt="Sectioning Hair Image 2" class="rounded-lg shadow-md w-full md:w-1/2 max-w-xs">
+                        </div>
+                        <li><span class="font-bold">Pre-Shampoo (Pre-Poo as often referred)</span> - Put a small amount of shampoo into a spray bottle and spray into your hair while detangling (if you choose to detangle while outside of the shower).
+                            <div class="my-4 flex justify-center">
+                                <img src="Screenshot 2025-05-31 202907.png" alt="African Pride Pre-Shampoo" class="rounded-lg shadow-md w-full max-w-xs">
+                            </div>
+                            <ul class="list-disc list-inside pl-5 mt-3 text-base text-gray-600">
+                                <li>Figure 8: African Pride Pre-Shampoo from curlsbyroshell on TikTok</li>
+                                <li>Source: curlsbyroshell on TikTok</li>
+                            </ul>
+                        </li>
+                        <li>Make sure the water is warm - Allow the water to reach a temperature not too hot to avoid heat damage or burns, allowing the hair follicles to open up.
+                            <ul class="list-disc list-inside pl-5 mt-3 text-base text-gray-600">
+                                <li><span class="font-italic">*Optional Route*</span> - If you choose to detangle in the shower, starting with the back sections, detangle from ends to roots with that section in the water. Then, continue to the shampoo step.</li>
+                            </ul>
+                        </li>
+                        <li><span class="font-bold">Shampooing</span> - Depending on how many sections, in our first back section, use a reasonably sized amount of shampoo and start working it in from ends to roots. Making sure to get into the scalp as well.
+                            <div class="my-4 flex justify-center">
+                                <img src="Screenshot 2025-05-31 203842.png" alt="Shampooing Curly Hair" class="rounded-lg shadow-md w-full max-w-sm">
+                            </div>
+                            <ul class="list-disc list-inside pl-5 mt-3 text-base text-gray-600">
+                                <li>Figure 9: Shampooing Curly Hair the Right Way</li>
+                                <li>Source: Medium</li>
+                            </ul>
+                        </li>
+                        <li><span class="font-bold">Rinse Step(s)</span> - Rinse out the shampoo thoroughly after repeating step 6 for each section.</li>
+                        <li><span class="font-bold">Conditioning</span> - After shampooing all of our sections, move on to conditioning. You can choose to turn the water temperature up a bit to create more steam so that the moisture sets in before rinsing out the conditioner. After 3-5 minutes, rinse.
+                            <ul class="list-disc list-inside pl-5 mt-3 text-base text-gray-600">
+                                <li><span class="font-italic">*Optional Step: Deep Conditioning*</span> - If you just had a protective style (braids, locs, etc) and you want to regain intensive moisture in your hair, then use your deep conditioner and allow 3 to 30 minutes to let the deep conditioner sit in your hair before rinsing.</li>
+                                <li><span class="font-italic">*Optional Step: Leave-In Conditioner*</span> - At this point, when you're outside (or inside the shower), style your hair completely normally as you would if you were using any other products.</li>
+                                <div class="my-4 flex justify-center">
+                                    <img src="PXL_20250531_232055319.RAW-01.COVER.jpg" alt="Hair Conditioning" class="rounded-lg shadow-md w-full max-w-xs">
+                                </div>
+                            </ul>
+                        </li>
+                        <li><span class="font-bold">Drying: Airdrying vs. Blow Drying</span> - Down to preferences and experiences.
+                            <div class="my-4 flex justify-center">
+                                <img src="PXL_20250531_232016777.RAW-01.COVER.jpg" alt="Hair Drying Methods" class="rounded-lg shadow-md w-full max-w-sm">
+                            </div>
+                            <ul class="list-disc list-inside pl-5 mt-3 text-base text-gray-600">
+                                <li><span class="font-italic">*For looser curls and textures:*</span></li>
+                                <ul class="list-circle list-inside pl-5 mt-2 text-base text-gray-600">
+                                    <li>It is recommended to lie on your bed with your hair hanging downward until it dries (to avoid using a hair dryer).</li>
+                                    <li>Use a diffuser on the blow dryer. (The black, spiky thing on the end of the blow dryer image above.</li>
+                                    <li>Using a diffuser on an air dryer can increase how voluminous your hair looks, but try not to use too high of a heat setting to avoid heat damage.</li>
+                                </ul>
+                            </ul>
+                        </li>
+                    </ol>
+
+                    <h3 class="text-2xl font-semibold text-gray-700 mb-4">Applying Oils or Creams</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-3">A critical step in the entire process and determining your wash’s outcome.</p>
+                    <h4 class="text-xl font-medium text-gray-700 mb-3">Oils are meant to:</h4>
+                    <ul class="list-disc list-inside text-lg text-gray-700 space-y-2 mb-6">
+                        <li>Lock the moisture into the hair,</li>
+                        <li>Give shine to hair,</li>
+                        <li>Promote hair growth.</li>
+                    </ul>
+
+                    <h4 class="text-xl font-medium text-gray-700 mb-3">If you are:</h4>
+                    <ul class="list-disc list-inside text-lg text-gray-700 space-y-2 mb-6">
+                        <li>Going somewhere and the temperature is going to be warmer than usual,</li>
+                        <li>Have already put a cream (certain ones) in your hair,</li>
+                        <li>Don’t necessarily want an oily scalp (looser textures),</li>
+                        <li>Then do NOT use an oil.</li>
+                    </ul>
+
+                    <h4 class="text-xl font-medium text-gray-700 mb-3">If you want to:</h4>
+                    <ul class="list-disc list-inside text-lg text-gray-700 space-y-2 mb-8">
+                        <li>Have visibly shiny hair that looks moisturized,</li>
+                        <li>Will not be in an environment where you will sweat a lot,</li>
+                        <li>Have trouble with sealing in and retaining moisture,</li>
+                        <li>Then you SHOULD use oil in your hair. Different oils can be used, such as tea tree oil, castor oil, or coconut oil, just to name a few that can be used in conjunction with other products.</li>
+                    </ul>
+
+                    <h3 class="text-2xl font-semibold text-gray-700 mb-4">Conclusion:</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-3">And we’re done! Hopefully, by the end of these detailed instructions, you’re able to:</p>
+                    <ul class="list-disc list-inside text-lg text-gray-700 space-y-2 mb-6">
+                        <li>Take caution of what could go wrong,</li>
+                        <li>Learn how to properly detangle your hair,</li>
+                        <li>Wash, condition, dry, and style your hair.</li>
+                    </ul>
+                    <p class="text-lg text-gray-700 leading-relaxed">As a final tip, if you’re curls are a little stuck together after using some products, you can give them a medium-forced shake up and down, side to side, left and right, then finally up and down again to maintain a fro-like appearance!</p>
+                `,
+                'proposal': `
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4 text-center">Writing Sample: Behind the Screen: Human Perception vs. Reality of Skeleton Screens and Progress Indicator User Experiences</h2>
+                    <p class="text-lg text-gray-600 mb-8 text-center">By Lorenzo Wyman &bull; Computer Science, Department of Computer Engineering and Computer Science</p>
+
+                    <p class="text-lg text-gray-600 mb-6 text-center">This writing assignment demonstrates my ability to research and plan a UCF level research proposal in hopes to be given a grant to conduct the research.
+                    The assignment discusses how the reality and human perception of loading screens and indicators plays a part in how we percieve how fast or slow things load by looking at different aspects such as
+                    speed, color, design, and more.</p>
+
+                    <h3 class="text-2xl font-semibold text-gray-700 mb-4">Project Objective:</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-8">
+                        In an era where advancements are often evaluated by speed, there is a prevalent belief that background processes have accelerated due to developer modifications. This proposal will investigate the variances between human perception of splash pages, favored perceived perception of skeleton screens, and progress indicators by understanding the thinking behavior of individuals.
+                    </p>
+
+                    <h3 class="text-2xl font-semibold text-gray-700 mb-4">Project Background:</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                        Since 2013, a significant loading speed technique emerged: skeleton screens. The introduction of skeleton screens transformed the perception of loading speed, particularly within mobile experiences and web experiences. Perceived perception is the behavioral reaction to something based on one’s personal experience, which often does not equal reality. Together with traditional spinners, progress bars, and indicators, skeleton screens provide a tool to bridge the gap between user action and displayed content. As a side effect, many developers have strayed from using them, claiming that the average time a user spends on a site to download something, for example, is around 2 seconds before leaving. This development raises several questions that we plan to answer with our proposal. What factors motivated organizations to adopt skeleton screens, and when did this shift take place? Why do these screens and experiences feel to load and behave faster compared to splash pages? Furthermore, how do developers determine whether to implement skeleton screens or progress bars, and are these methods effective?
+                    </p>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                        Traditionally, splash screens served as the initial point of interaction, whether at the beginning, throughout, or end of the experience. Their purpose was to engage users during background processes. These screens, common across applications and websites, prevented users from simply interacting with a blank page, which might be misinterpreted as an error. As technology advanced, hardware improvements also sought to enhance performance. However, these advancements were often insufficient to meet user expectations. Therefore, developers pursued refined solutions, essentially leading to the adoption of skeleton screens.
+                    </p>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-8">
+                        These screens can be deployed in two primary ways. They can supplement a splash screen or function independently, offering insight into the application's structure. Regardless of implementation, skeleton screens present the framework or “wireframe” of the content to be displayed. As stated in one peer-reviewed article, this is done by outlining the layout of elements, which creates the perception of active loading, reducing user frustration (Söderström et al.). This impression of progress is enhanced by progress indicators, bars, and spinners, for example, in file explorer or downloading an app from the app store, which provide feedback within 2 - 10 seconds. The adoption of skeleton screens represents a strategic shift in user experience design, transitioning from passive waiting to active engagement. Understanding the underlying thought processes and behavioral attributes that make users believe the mobile apps and sites they use every day run faster or perform better through our research will allow a potential breakthrough in what developers should continue to do or rethink on how to improve the overall loading time.
+                    </p>
+
+                    <h3 class="text-2xl font-semibold text-gray-700 mb-4">Research Methods:</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                        Reviewing and following similar methods to Mejtoft et al. and Söderström et al., our proposal plans on creating 4 prototyped versions of a mobile app and 2 websites using JavaScript, HTML, and CSS to develop varied user-interfaces (UI), speeds, animation, load time, and design, all having the same features. Utilizing the Knight Hack’s outreach team and posts through social media content and emailing, we will recruit at most 20 participants: 5 engineering majors, 5 fine arts majors, 5 nursing majors, and 5 business majors. All of whom spend extended periods of time using computers, making 5 groups of 4 from different backgrounds, with 1 person from each major of study in each test. Thus, to get results on which ways were preferred, unpreferred, or neither preferred nor unpreferred.
+                    </p>
+                    <ul class="list-disc list-inside text-lg text-gray-700 space-y-3 mb-8">
+                        <li><span class="font-bold">Test 1 - Mobile Bank App with Default Speed:</span> This version of the mobile app will have light colored theming, much to imitate a softer, flowy, and relaxed user experience and pace, where the user will be met with a splash page, followed by the log in screen, home page with navigation, settings, and account page. This test plan is to monitor the behavior users have towards applications with a lighter theme, and the ease of access to navigate and use the app.</li>
+                        <li><span class="font-bold">Test 2 - Mobile Bank App with Default Speed and Dark UI:</span> Similarly to the first test, it will be a carbon copy of that app version, this time with darker UI elements and theme to cause a vast difference in preference and likability. This test is inspired by user interactions with dark mode on several apps that are used daily, such as messaging, mobile banking, and settings, but focusing on one of those important apps, mobile banking. The goal is to receive results supporting our proposal that different experiences and behaviors are caused by the use of splash pages versus skeleton screens.</li>
+                        <li><span class="font-bold">Test 3 - Mobile Bank App with Faster Speed:</span> This version of the mobile experience will still replicate the light theme of the first test, but with a skeleton page and a cleaned and refreshed UI, still keeping only the same features and light theme. The goal for this round of user observation will be to see how users perceive the app now that it has faster animation times and an improved UI look, rather than the normal UI and faster animation test that is usually expected.</li>
+                        <li><span class="font-bold">Test 4 - Mobile Bank App with Faster Speed and Dark UI:</span> This fourth and final mobile app observation will replicate that of the third test, but with a darker UI and skeleton page instead of a splash page. The results of this app experience might be preferred depending on an individual's preference for app theme and layout.</li>
+                        <li><span class="font-bold">Tests 5 & 6 - Online, Web-based banking:</span> These tests will be conducted the same as the previous tests, comparing the feel of using improved UI, simple animation, and light theme to its counterpart with faster animation, skeleton pages, and darker theme. The need to test using barebone UI or HTML is highly likely to return a 100% unpreferred interest in using, but using today's standard UI or light or dark mode would prove to be more revealing.</li>
+                    </ul>
+
+                    <h3 class="text-2xl font-semibold text-gray-700 mb-4">Expected Outcome:</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                        As the results are concluded and finalized, it is expected to find the commonalities and differences between the mobile app experience and the online, web-based experience from users. It is also highly likely that the mobile app performance numbers will be widely used and provide developers with a new set of data and analytics as to how their future apps and designs should flow, operate, and cater to their users. As proposed, the results will also show that there is a noticeable suggestion for why users would prefer to use and interact with skeleton pages and progress bars rather than not be given anything to interact with at all and risk wasting their time. Benefitting from the form of infographic potent deliverables will be better at helping people to understand the impact that skeleton screens have versus using splash pages.
+                    </p>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                        At the University of Central Florida (UCF), particularly, loading the Canvas Student mobile app, you’re presented with the Canvas logo, which further acts as a circular loading indicator and anxiety inducer for whether or not the app may load, depending on your device’s cellular connection on campus. The same scenario happens when loading Microsoft Outlook or viewing MyUCF on any type of mobile device. The design, animations, and interactivity of the webpage or app all play an important role alongside the use of a skeleton page and determine whether or not the overall experience will prove to be worth it or not. The MyUCF webpage is a prime example of an overwhelming amount of information, without a splash or skeleton page to easily grasp the information loading, that lacks a user-friendly design and varied user interest.
+                    </p>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-8">
+                        These expected results, as proposed, will provide UCF with a more in-depth user response to their platform that in the future will prevent chaos and or added stress and frustration from users when visiting their site or using their mobile app services, the same way it will for other developers.
+                    </p>
+
+                    <h3 class="text-2xl font-semibold text-gray-700 mb-4">Preliminary Work and Experience:</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-8">
+                        In one year of attending UCF, we’ve obtained a new set of skills and knowledge in creating mobile apps and websites that are both efficient for the users and the developers to maintain. We’ve participated in extracurricular clubs and activities such as Knight Hacks, in a group, a semester-long project creating a pantry food storage app that tracks your recipes, and receipts with photo vision using artificial intelligence (AI). My primary focus was researching similar apps on the market, which resulted in designing a highly praised UI for our app. In that time, my skills in graphically designing and researching have greatly improved from attending career development workshops for front-end development. My passion and experience for this line of work and career remain without notice and acknowledgment from individuals and peers pursuing similar paths.
+                    </p>
+
+                    <h3 class="text-2xl font-semibold text-gray-700 mb-4">IRB Statement:</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-8">
+                        Given our intended experimentation and analysis, an IRB approval will be needed for us to survey, interview, and observe individuals while they volunteer to participate in our proposed research. As mentioned earlier, we will need at most 20 student participants, all ranging from 5 different majors, engineering, nursing, business, and fine arts, with one participant from each field in each task to have a uniquely diversified set of results. We will be able to get participants by using available resources and outreach from Knight Hacks as well as from the Student Government by sending emails.
+                    </p>
+
+                    <h3 class="text-2xl font-semibold text-gray-700 mb-4">Budget:</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                        The budget for this proposal is understood to not exceed $1,500, but it can easily be done for as little as $0, given the appropriate use of free products and services. However, with our timeline of 2 months, wanting to get individuals to participate and the effort it will take to build these experiences, the realistic price will not be $0.
+                    </p>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                        To start, we anticipate beginning development after we research user experience perceptions that should account for no more than 2-3 days, spending no more than 8 hours per day, and no more than 1 week per mobile app or experience.
+                    </p>
+                    <ul class="list-disc list-inside text-lg text-gray-700 space-y-2 mb-8">
+                        <li>Week 1 - Mobile App Experience 1 Development: Week of June 1st to June 7th</li>
+                        <li>Week 2 - Mobile App Experience 2 Development: Week of June 8th to June 14th</li>
+                        <li>Week 3 - Mobile App Experience 3 Development: Week of June 15th - 21st</li>
+                        <li>Week 4 - Mobile App Experience 4 Development: Week of June 22nd - 28th</li>
+                        <li>Week 5 - Online, Web-based Experience 1 Development: Week of June 29th - July 4th</li>
+                        <li>Week 6 - Online, Web-based Experience 2 Development: Week of July 5th - July 11th</li>
+                        <li>Week 7 - Surveying and Interviewing Participants: Week of July 12th - 18th</li>
+                        <li>Final Week - Conclusions, Preparations for Result Presentations: Week of July 19th - July 25th</li>
+                    </ul>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                        Of our $1,500, $200 of which will be allotted for the participant prizes, $10 for each participant for up to 20 participants. Leaving us with $1,300 that will be used for any additional products or digital services that require a subscription to access or use, including but not limited to research paper documents on subscription websites like Figma Pro or Canva Pro, traveling to designated meeting places, digital software, or materials.
+                    </p>
+                    <div class="bg-teal-50 p-6 rounded-lg shadow-inner text-gray-800 mb-8">
+                        <p class="font-bold text-xl mb-2">With all costs considered,</p>
+                        <ul class="list-none space-y-1 text-lg">
+                            <li>Budget: <span class="font-medium">$1,500</span></li>
+                            <li>( - ) Participant prizes: $10/participant for 12 participants = <span class="font-medium">$120</span></li>
+                            <li>( - ) Canva Pro (Individual): $15/month for 2 months = <span class="font-medium">$30</span></li>
+                            <li>( - ) Figma Pro: $20/month for 2 months = <span class="font-medium">$40</span></li>
+                            <li class="border-t border-gray-300 my-2 pt-2"></li>
+                            <li class="font-bold text-xl">Total Cost: <span class="text-teal-700">$190.00</span></li>
+                            <li class="font-bold text-xl">Total Remaining: <span class="text-green-700">$1,310.00</span></li>
+                        </ul>
+                        <p class="mt-4 text-lg">The total cost of the research will be $190, with $1,310 remaining.</p>
+                    </div>
+                `,
+                'coverletter': `
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-8 text-center">Writing Sample: Cover Letter</h2>
+
+                     <p class="text-lg text-gray-600 mb-6 text-center">This writing assignment demonstrates my ability to write a professional cover letter for a job listing or application to better my chances of 
+                        standing out and receiving an interview. It also shows how I can apply myself to a job or company by relating my skills to that of the company.</p>
+
+                    <div class="text-lg text-gray-700 leading-relaxed mb-6">
+                        <p>Lorenzo Wyman</p>
+                        <p>Orlando, FL 32826</p>
+                        <p>904-123-4567</p>
+                        <p>lorenzo.wyman@ucf.edu</p>
+                    </div>
+
+                    <p class="text-lg text-gray-700 mb-6">June 7, 2025</p>
+
+                    <div class="text-lg text-gray-700 leading-relaxed mb-6">
+                        <p>Leidos</p>
+                        <p>12901 Science Dr, Orlando, FL, US</p>
+                    </div>
+
+                    <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                        Dear Leidos Talent Acquisition Team,
+                    </p>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                        I’m writing to express my interest in the Software Development Intern position on your Handshake page in Orlando, FL. Contributing to Leidos’ impactful engineering and trusted AI solutions as a third-year Computer Science major sounds quite appealing. I would greatly appreciate the ability to express my extensive interest and skills as a new member of your team.
+                    </p>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                        Since starting college and transferring to the University of Central Florida, I’ve been able to continuously hone and perfect my skills in programming languages such as C, HTML, Java, JavaScript, and Python while also combining those skills to create mobile app projects and websites using React Native, including my portfolio, while also using C to simulate the operations of an arithmetic logic unit through MIPS instruction files. While I am still expanding my expertise in other skill sets, I am eager to apply all of this knowledge to further refine it in a professional environment.
+                    </p>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                        Leidos' global impact and presence on government intelligence and civilian defense, while providing interns with meaningful projects tackling tough real-world problems and experiences, strongly speaks to me about how involved and passionate the company is with ensuring its employees’ success. I’ve worked and led team operations as an advisor in Journalism, where I often had to assess, motivate, and reassure my team’s creative performance to ensure the quality of our graphic designs and products were successfully produced while maintaining a positive working environment for everyone.
+                    </p>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                        I’m confident that my academic foundation and enthusiasm for software development would make me an excellent candidate for your team. I look forward to the opportunity to schedule an interview to discuss how my skills and aspirations align with the needs of Leidos. I would be more than pleased to address any questions or concerns that you may have.
+                    </p>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Thank you for your consideration.<br>Sincerely,<br>Lorenzo Wyman
+                    </p>
+                `,
+                'resume': `
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-8 text-center">Writing Sample: Resume</h2>
+                    <p class="text-lg text-gray-600 mb-6 text-center">This writing assignment was to improve my resume to include relevant skills, and talent aswell reformat it in a way that is ATS friendly.
+                        The assignment demonstrates my skills to create professional, career level documents that are the industry standard when applying to jobs.</p>
+
+                    <div class="mb-8 p-6 bg-teal-50 rounded-lg shadow-inner">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Lorenzo Wyman</h3>
+                        <p class="text-lg text-gray-700">Orlando, FL 32826 | 904-123-4567 | lorenzo.wyman@ucf.edu</p>
+                        <p class="text-lg text-gray-700 mt-1">GitHub | LinkedIn | Portfolio</p>
+                    </div>
+
+                    <div class="mb-8">
+                        <h3 class="text-2xl font-semibold text-gray-700 mb-4 pb-2 border-b-2 border-teal-200">EDUCATION</h3>
+                        <div class="mb-6 pl-4 border-l-4 border-teal-300">
+                            <h4 class="text-xl font-medium text-gray-800">University of Central Florida</h4>
+                            <p class="text-lg text-gray-700">Bachelor of Science in Computer Science</p>
+                            <p class="text-base text-gray-600">Orlando, FL | 2024 - Present</p>
+                            <p class="text-base text-gray-600 mt-2 leading-relaxed">
+                                <span class="font-semibold">Related Coursework:</span> Computer Logic & Organization, Computer Science I, Security In Computing, Object-Orientated Programming
+                            </p>
+                        </div>
+                        <div class="mb-4 pl-4 border-l-4 border-teal-300">
+                            <h4 class="text-xl font-medium text-gray-800">Santa Fe College</h4>
+                            <p class="text-lg text-gray-700">Associates of Arts in Computer Science</p>
+                            <p class="text-base text-gray-600">Gainesville, FL | 2022 - 2024</p>
+                        </div>
+                    </div>
+
+                    <div class="mb-8">
+                        <h3 class="text-2xl font-semibold text-gray-700 mb-4 pb-2 border-b-2 border-teal-200">SKILLS</h3>
+                        <ul class="list-none space-y-3 text-lg text-gray-700 pl-4">
+                            <li class="relative pl-6">
+                                <span class="absolute left-0 top-0 text-teal-600 text-xl">&bull;</span> <span class="font-bold">Languages:</span> English (Fluent), American Sign Language (Intermediate), Spanish (Basic)
+                            </li>
+                            <li class="relative pl-6">
+                                <span class="absolute left-0 top-0 text-teal-600 text-xl">&bull;</span> <span class="font-bold">Programming & Frameworks:</span> C (Intermediate), CSS (Intermediate), HTML (Beginner), Java (Beginner), JavaScript (Intermediate), React Native (Intermediate)
+                            </li>
+                            <li class="relative pl-6">
+                                <span class="absolute left-0 top-0 text-teal-600 text-xl">&bull;</span> <span class="font-bold">Tools & Platforms:</span> Canva, Figma, GitHub, Microsoft Office, OnShape (CAD)
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="mb-8">
+                        <h3 class="text-2xl font-semibold text-gray-700 mb-4 pb-2 border-b-2 border-teal-200">PROFESSIONAL EXPERIENCE</h3>
+                        <div class="mb-6 pl-4 border-l-4 border-teal-300">
+                            <h4 class="text-xl font-medium text-gray-800">EXCEL Peer Coach</h4>
+                            <p class="text-base text-gray-600">University of Central Florida | Orlando, FL | May 2023 - Present</p>
+                            <ul class="list-disc list-inside text-lg text-gray-700 pl-4 space-y-1 mt-2">
+                                <li>Helped incoming students by being a teaching assistant with 100+ transfer students both in person and virtually, to set their goals and tasks, and tracked tasks and goal progress over the course of their academic enrollment in the EXCEL program.</li>
+                                <li>Monitored and tracked the status of students' grades over the semester; Met with students to ensure they excelled at end of program.</li>
+                            </ul>
+                        </div>
+                        <div class="mb-4 pl-4 border-l-4 border-teal-300">
+                            <h4 class="text-xl font-medium text-gray-800">Academic Success Coach</h4>
+                            <p class="text-base text-gray-600">Santa Fe College | Gainesville, FL | September 2023 - May 2024</p>
+                            <ul class="list-disc list-inside text-lg text-gray-700 pl-4 space-y-1 mt-2">
+                                <li>Conducted 100+ academic coaching sessions to improve student success rates by delivering personalized guidance and strategic academic plans.</li>
+                                <li>Leveraged academic tracking tools to monitor student progress, resulting in a 20% increase in follow-up sessions and appointments.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="mb-8">
+                        <h3 class="text-2xl font-semibold text-gray-700 mb-4 pb-2 border-b-2 border-teal-200">PROJECTS</h3>
+                        <div class="mb-6 pl-4 border-l-4 border-teal-300">
+                            <h4 class="text-xl font-medium text-gray-800">Front-End Software Developer | ZoTography</h4>
+                            <p class="text-base text-gray-600">Mobile App & Website | In Progress</p>
+                            <ul class="list-disc list-inside text-lg text-gray-700 pl-4 space-y-1 mt-2">
+                                <li>Designed a mobile app using HTML & JavaScript as personal project to feature projects and photography collections similarly to a portfolio.</li>
+                                <li>Developed and conducted research on the behavioral pattern of users to improve the experiences of users and customers in the future.</li>
+                            </ul>
+                        </div>
+                        <div class="mb-6 pl-4 border-l-4 border-teal-300">
+                            <h4 class="text-xl font-medium text-gray-800">UI/UX Software Developer | Knight Hacks | PantryPal</h4>
+                            <p class="text-base text-gray-600">Mobile App | April 2025</p>
+                            <ul class="list-disc list-inside text-lg text-gray-700 pl-4 space-y-1 mt-2">
+                                <li>Designed the UI of a mobile app using JavaScript and React Native to maintain user-friendly experience while users track their food and purchasing habits using receipt scanning and AI to suggest nutritious recipes from our database.</li>
+                                <li>Led 3D modeling and design for the hardware casing of 'S Shade,' reducing printing time by 20% through optimized designs.</li>
+                            </ul>
+                        </div>
+                        <div class="mb-6 pl-4 border-l-4 border-teal-300">
+                            <h4 class="text-xl font-medium text-gray-800">Avionics Software Engineer | HYIET</h4>
+                            <p class="text-base text-gray-600">Hydrogen-Powered RC Jet | November 2024</p>
+                            <ul class="list-disc list-inside text-lg text-gray-700 pl-4 space-y-1 mt-2">
+                                <li>Collaborated on the design and programming of interior systems for a hydrogen-powered unmanned RC jet.</li>
+                                <li>Integrated onboard software systems to support a 1KW hydrogen fuel power system, ensuring operational efficiency.</li>
+                            </ul>
+                        </div>
+                        <div class="mb-4 pl-4 border-l-4 border-teal-300">
+                            <h4 class="text-xl font-medium text-gray-800">3D Modeler | S Shade by SLAB</h4>
+                            <p class="text-base text-gray-600">3D Modeling & Design | May 2023</p>
+                            <ul class="list-disc list-inside text-lg text-gray-700 pl-4 space-y-1 mt-2">
+                                <li>Utilized 3D modeling and design for the hardware casing of 'S Shade,' reducing printing time by 20% through optimized designs.</li>
+                                <li>Utilized OnShape CAD software to print out efficient designs using PrusaSlicer 3D printers.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="mb-8">
+                        <h3 class="text-2xl font-semibold text-gray-700 mb-4 pb-2 border-b-2 border-teal-200">CERTIFICATIONS & BADGES</h3>
+                        <ul class="list-disc list-inside text-lg text-gray-700 pl-4 space-y-2 mb-6">
+                            <li>University of South Florida: GenAI in Action: Impact and Possibilities (2025)</li>
+                            <li>Google for Developers: Cross Platform Apps with Angular (2024); Introduction to Generative AI (2024)</li>
+                        </ul>
+                    </div>
+
+                    <div class="mb-8">
+                        <h3 class="text-2xl font-semibold text-gray-700 mb-4 pb-2 border-b-2 border-teal-200">ACTIVITIES & LEADERSHIP</h3>
+                        <div class="mb-6 pl-4 border-l-4 border-teal-300">
+                            <h4 class="text-xl font-medium text-gray-800">ICPC North American Championship and Programming Camp Volunteer (2025)</h4>
+                            <ul class="list-disc list-inside text-lg text-gray-700 pl-4 space-y-1 mt-2">
+                                <li>Worked and assisted mainly with setup, gave instructions to the different teams in order to navigate the buildings and register for the event.</li>
+                                <li>Monitored and maintained the safety and atmosphere of the contestants and event venue.</li>
+                            </ul>
+                        </div>
+                        <div class="mb-4 pl-4 border-l-4 border-teal-300">
+                            <h4 class="text-xl font-medium text-gray-800">KnightHacks Outreach Team Photographer (2023 - 2024)</h4>
+                            <ul class="list-disc list-inside text-lg text-gray-700 pl-4 space-y-1 mt-2">
+                                <li>Utilized academic & technical coding workshops and projects with group members.</li>
+                                <li>Organized outreach events to promote club events and increase member sign ups and event turn outs.</li>
+                            </ul>
+                        </div>
+                    </div>
+                `
+            };
+
+            // Function to display content
+            function displayContent(sectionId) {
+                // Remove active class from all nav links
+                navLinks.forEach(link => link.classList.remove('active'));
+
+                if (sectionId === 'home') {
+                    homeSection.classList.remove('hidden');
+                    dynamicContentSection.classList.add('hidden');
+                    dynamicContentSection.innerHTML = ''; // Clear dynamic content
+                    document.getElementById('nav-home').classList.add('active');
+                } else {
+                    homeSection.classList.add('hidden');
+                    dynamicContentSection.classList.remove('hidden');
+                    dynamicContentSection.innerHTML = content[sectionId] || '<p class="text-red-500 text-center text-xl font-semibold">Content not found for this section.</p>';
+                    document.getElementById(`nav-${sectionId}`).classList.add('active');
+                }
+                // Scroll to top of the content area for better UX
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+
+            // Add click event listeners to navigation links
+            navLinks.forEach(link => {
+                link.addEventListener('click', (event) => {
+                    event.preventDefault(); // Prevent default link behavior
+                    const id = link.id.replace('nav-', ''); // Get the section ID from link ID
+                    displayContent(id);
+                });
+            });
+
+            // Initially display the home content
+            displayContent('home');
+        });
+    </script>
+</body>
+</html>
